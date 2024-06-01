@@ -4,7 +4,7 @@ VALUES ('DEAN', 'Deanston 12 years old', 99.99),
        ('ARR', 'Arran 10 years old', 79.99),
        ('JOHN', 'Johnnie Walker Green Label', 75.99);
 
-INSERT INTO specials (sku, type, description, discount_value, limit_value, bulk_quantity, bulk_price, freebie_sku,
+INSERT INTO price_rules (sku, type, description, discount_value, limit_value, bulk_quantity, bulk_price, freebie_sku,
                       minimum_order_value)
 VALUES ('JOHN', 'discount', '4-for-3 offer', 75.99, NULL, NULL, NULL, NULL, NULL),
        ('KIL', 'limit', 'One bottle per order', NULL, 1, NULL, NULL, NULL, NULL),

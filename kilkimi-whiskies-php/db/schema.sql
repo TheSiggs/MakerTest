@@ -4,7 +4,7 @@ CREATE TABLE products (
                           price DECIMAL(10, 2) NOT NULL
 );
 
-CREATE TABLE specials
+CREATE TABLE price_rules
 (
     id                  INT AUTO_INCREMENT PRIMARY KEY,
     sku                 VARCHAR(10)                                   NOT NULL,
