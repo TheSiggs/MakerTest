@@ -19,3 +19,11 @@ set-npm: # Sets npm to v20.13.1 using nvm
 		nvm use lts/iron; \
 	fi
 
+dd: # downs docker compose
+	docker compose down -t1
+
+du: # up docker compose
+	docker compose up -d
+
+dub: # up docker compose with build
+	docker compose up -d --build

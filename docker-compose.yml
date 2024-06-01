@@ -22,7 +22,7 @@ services:
       MYSQL_USER: kilkimiuser
       MYSQL_PASSWORD: userpassword
     ports:
-      - "3306:3306"
+      - "0.0.0.0:3306:3306"
     volumes:
       - db-data:/var/lib/mysql
     networks:

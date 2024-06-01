@@ -5,9 +5,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
-    && docker-php-ext-install pdo_mysql \
-    && pecl install xdebug \
-    && docker-php-ext-enable xdebug
+    && docker-php-ext-install pdo_mysql
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
@@ -19,7 +17,4 @@ COPY my-custom-apache-config.conf /etc/apache2/sites-available/000-default.conf
 WORKDIR /var/www/html
 
 # Copy the application files
-COPY src/ /var/www/html/
-
-# Copy Xdebug configuration
-COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+COPY kilkimi-whiskies-php/ /var/www/html/
