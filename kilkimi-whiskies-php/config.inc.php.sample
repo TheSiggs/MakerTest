@@ -4,5 +4,6 @@ $config = [
     'database' => 'kilkimi',
     'username' => '',
     'password' => '',
+    'origin_url' => 'http://localhost:3000'
 ];
 
