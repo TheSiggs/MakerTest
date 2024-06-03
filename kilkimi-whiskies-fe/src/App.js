@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import {logDOM} from "@testing-library/react";
 import {Product} from "./components/Product";
 import {CartItem} from "./components/CartItem";
 
