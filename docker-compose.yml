@@ -9,7 +9,7 @@ services:
     volumes:
       - ./kilkimi-whiskies-php:/var/www/html
     ports:
-      - "8080:80"
+      - "80:80"
     networks:
       - app-network
 

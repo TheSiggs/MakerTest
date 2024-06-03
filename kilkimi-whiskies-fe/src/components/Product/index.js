@@ -1,7 +1,7 @@
 import React from 'react';
 import './product.css';
 
-export const Product = ({key, item, onClick, currentPrice}) => {
+export const Product = ({key, item, onClick}) => {
     const {
         bulk_price,
         bulk_quantity,
@@ -19,7 +19,7 @@ export const Product = ({key, item, onClick, currentPrice}) => {
     return (
         <div key={key} className="item">
             <h2>{name}</h2>
-            <p>${currentPrice}</p>
+            <p>${price}</p>
             <button onClick={() => onClick(item)}>Add to Cart</button>
         </div>
     );

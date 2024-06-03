@@ -11,14 +11,14 @@ function App() {
     const [priceRules, setPriceRules] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:8080/src/ajax/products/fetch.php')
+        fetch('http://localhost/src/ajax/products/fetch.php')
             .then(r => r.json())
             .then(r => setInventory(r))
             .catch(e => console.log(e));
     }, [setInventory]);
 
     useEffect(() => {
-        fetch('http://localhost:8080/src/ajax/salesRules/fetch.php')
+        fetch('http://localhost/src/ajax/salesRules/fetch.php')
             .then(r => r.json())
             .then(r => setPriceRules(r))
             .catch(e => console.log(e));
@@ -112,7 +112,7 @@ function App() {
                         currentPrice={item.price}
                     />
                 ))}
-                <h2>Total: ${total.toFixed(2)}</h2>
+                <h2 id="cart-total">Total: ${total.toFixed(2)}</h2>
             </div>
         </div>
     );
