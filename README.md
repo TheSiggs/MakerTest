@@ -2,6 +2,29 @@
 
 Maker has expanded and is now selling Scotch whiskies online, under the trading name Kilkimi Whiskies.
 
+## Consideration If I Had More Time
+- Add more tests
+  - The tests I put in only tested basic functionality and not different combinations of products
+- Move BL to PHP side
+  - All the cart logic is in the frontend, putting it in the php side would be better to separate responsibility
+  - This would also allow the PHP side to manage the cart and store carts in the db to allow for easier manipulation
+- Implement remove from cart logic
+  - I only implemented add to cart logic - this is incomplete to the CRUD method set
+- Allow qty update in the cart area and not just by pressing "Add to Cart" on the product
+  - Allows for the cart to separate from the products
+- Implement cart completion logic
+  - You cannot actually "complete" your purchase with this
+- Implement API authentication logic on the backend Ajax scripts
+  - This will allow for security when accessing the backend
+- Use environment variables for hard coded variables
+  - The urls in the fetch statements should be stored in env variables to allow for easy changing depending on environments
+- Make better use of constants for certain variables. i.e the "free" tag
+- Split out the frontend and backend logic into their own repositories
+  - Makes it's easier to separate responsibilities and less overheads as the docker setup is only used for the php backend
+- Create better directory structure for the frontend
+  - This will allow for better management of components
+  - I would use the atomic structure to better organize components - https://www.linkedin.com/pulse/in-depth-look-atomic-architecture-react-sanjeev-sharma/
+
 ## Requirements
 
 You have been engaged to build a simple website/system of your choice that users can add items to, calculate and display the total items and price.
