@@ -24,6 +24,11 @@ Maker has expanded and is now selling Scotch whiskies online, under the trading 
 - Create better directory structure for the frontend
   - This will allow for better management of components
   - I would use the atomic structure to better organize components - https://www.linkedin.com/pulse/in-depth-look-atomic-architecture-react-sanjeev-sharma/
+- Use a PHP framework - i.e. Symfony
+  - Allows for easier organization of functionality
+  - Use of better ORM management (No .sql scripts...)
+  - Better API tooling - API Platform, DTO
+  - Better hosting of frontend - Using twig to render react components to run a full react frontend without needing to create FE and BE separately
 
 ## Requirements
 
